@@ -1,2 +1,118 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+/*
+*************** 
+GOOGLE FONTS
+***************
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+/*
+*************** 
+VARIABLES
+***************
+*/
+:root {
+    --buttons-color: #ff9d00;
+    --title-color: #white;
+    --white-text-color: white;
+    --dark-text-color: #black;
+    --title-font: "League Spartan", sans-serif;
+    --text-font: "Roboto Slab", serif;
+    --button-font: "Montserrat", sans-serif;
+}
+
+/*
+*************** 
+ALL COMPONENTS
+***************
+*/
+
+p,
+a {
+    color: var(-buttons-color);
+    font-family: var(--text-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--title-color);
+    font-family: var(--title-font);
+}
+
+.line {
+    color: var(--buttons-color);
+    height: 2 rem;
+    width: 10 rem;
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--white-text-color);
+    border: none;
+    font-family: var(--button-font);
+}
+
+.btn:hover {
+    background-color: var(--white-text-color);
+    color: var(--buttons-color);
+    border: 1px solid var(--buttons-color);
+    font-weight: bold;
+    border: none;
+}
+
+/*
+*************** 
+NAVBAR COMPONENT
+***************
+*/
+
+.navbar-brand,
+.nav-link {
+    color: var(--white-text-color);
+    font-family: var(--button-font);
+}
+
+.nav-link:hover {
+    color: var(--buttons-color);
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-icon {
+    display: block;
+    width: 24px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+/*
+*************** 
+WELCOME COMPONENT
+***************
+*/
+
+#welcome h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--buttons-color);
+}
