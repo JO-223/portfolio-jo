@@ -17,7 +17,7 @@ VARIABLES
 */
 :root {
     --buttons-color: #ff9d00;
-    --title-color: #white;
+    --title-color: #ff9d00;
     --white-text-color: white;
     --dark-text-color: #black;
     --title-font: "League Spartan", sans-serif;
@@ -70,6 +70,47 @@ h6 {
 
 /*
 *************** 
+LAYOUT COMPONENT
+***************
+*/
+#welcome h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--white-text-color);
+}
+
+#welcome h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.vertical {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+@media (max-width: 768px) {
+    #welcome {
+        background-position: right;
+    }
+}
+
+/* effects and animations */
+.active {
+    color: var(--buttons-color);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/*
+*************** 
 NAVBAR COMPONENT
 ***************
 */
@@ -78,11 +119,11 @@ NAVBAR COMPONENT
 .nav-link {
     color: var(--white-text-color);
     font-family: var(--button-font);
+    font-weight: bold;
 }
 
 .nav-link:hover {
     color: var(--buttons-color);
-    font-weight: bold;
 }
 
 .navbar-toggler {
@@ -103,16 +144,4 @@ NAVBAR COMPONENT
     height: 4px;
     margin-bottom: 5px;
     background-color: #fff;
-}
-
-/*
-*************** 
-WELCOME COMPONENT
-***************
-*/
-
-#welcome h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--buttons-color);
 }

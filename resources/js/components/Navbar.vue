@@ -15,16 +15,10 @@
                 <!-- Navbar links -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/login">Login</router-link>
-                    </li>
-                    <li class="nav-item">
                         <router-link class="nav-link" to="/projects">Projects</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/skills">Skills</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/contact">Contact</router-link>
+                        <router-link class="nav-link" to="/login"><i class="bi bi-person-fill-lock"></i></router-link>
                     </li>
                 </ul>
             </div>
