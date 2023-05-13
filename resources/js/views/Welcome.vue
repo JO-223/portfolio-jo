@@ -31,22 +31,19 @@
             <div class="col-4 d-flex justify-content-end align-items-center ">
                 <img src="images/bg1.jpg" class="" alt="Your Image" style="width: 20%; height: auto;" />
             </div>
-            <div class="col-1 text-end position-relative">
-                <div class="vertical-text position-absolute bottom-0 end-0">
-                    <a href="#" class="btn">UpWork</a><br />
-                    <a href="#" class="btn ">Github</a><br />
-                </div>
-            </div>
+            <HireMe />
         </div>
     </div>
 </template>
   
 <script>
 import Navbar from '@/components/Navbar.vue'
+import HireMe from '@/components/HireMe.vue'
 
 export default {
     components: {
-        Navbar
+        Navbar,
+        HireMe
     },
 
     data() {
@@ -103,15 +100,15 @@ export default {
     width: 100%;
 }
 
-
-.vertical-text a {
-    display: block;
-    writing-mode: vertical-lr;
-}
-
 .vertical {
     writing-mode: vertical-lr;
     text-orientation: mixed;
+}
+
+@media (max-width: 768px) {
+    #welcome {
+        background-position: right;
+    }
 }
 </style>
   
