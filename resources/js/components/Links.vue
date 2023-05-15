@@ -32,9 +32,11 @@
 <script>
 export default {
     name: "Links",
+
     props: {
         currentRoute: String,
     },
+
     methods: {
         linkClicked(link) {
             this.$emit("link-clicked", link);

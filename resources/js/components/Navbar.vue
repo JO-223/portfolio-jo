@@ -15,7 +15,7 @@
                 <!-- Navbar links -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/projects">Projects</router-link>
+                        <router-link class="nav-link" to="/projects">Some Link</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/login"><i class="bi bi-person-fill-lock"></i></router-link>

@@ -16,8 +16,8 @@ VARIABLES
 ***************
 */
 :root {
-    --buttons-color: #ff9d00;
-    --title-color: #ff9d00;
+    --buttons-color: #a45454;
+    --title-color: #f65a2f;
     --white-text-color: white;
     --dark-text-color: #black;
     --title-font: "League Spartan", sans-serif;
@@ -33,7 +33,7 @@ ALL COMPONENTS
 
 p,
 a {
-    color: var(-buttons-color);
+    color: var(-title-color);
     font-family: var(--text-font);
 }
 
@@ -48,7 +48,7 @@ h6 {
 }
 
 .line {
-    color: var(--buttons-color);
+    color: var(--title-color);
     height: 2 rem;
     width: 10 rem;
 }

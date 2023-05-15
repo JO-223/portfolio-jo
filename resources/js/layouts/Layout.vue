@@ -2,7 +2,7 @@
     <Navbar />
     <div class="container-fluid" id="welcome">
         <div class="row vh-100">
-            <div class="col-5 d-flex flex-column justify-content-end align-items-center text-white text-center">
+            <div class="col-6 d-flex flex-column justify-content-end align-items-center text-white text-center mt-5">
                 <h2 class="display-1 greatings" v-text="currentGreeting"></h2>
                 <h1 class="display-1">I'm JO</h1>
                 <div class="row m-5">
@@ -38,10 +38,8 @@
                     </div>
                     <div :class="['col-12', 'd-flex', justifyContentClass, 'align-items-center']">
                         <Links @link-clicked="updateJustifyContent" :currentRoute="$route.name" />
-                        />
                     </div>
                 </div>
-
             </div>
             <HireMe />
         </div>
@@ -80,7 +78,7 @@ export default {
                 'Bonjour',
                 'Hallo'
             ],
-            justifyContentClass: 'justify-content-end',
+            justifyContentClass: 'justify-content-center',
             currentGreeting: '',
             currentLetterIndex: 0,
             currentGreetingIndex: 0
@@ -135,9 +133,10 @@ export default {
 <style scoped>
 #welcome {
     background-image: url("images/bg2.png");
-    background-color: hsl(0, 94%, 27%);
-    /* background-color: hsl(208, 64%, 54%); */
+    background-color: hsl(0, 100%, 20%);
+    /* background-color: hsl(147, 84%, 15%); */
     background-blend-mode: color-burn;
+    ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
